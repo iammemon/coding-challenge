@@ -37,3 +37,26 @@ class Solution:
                 right = mid -1
         
         return result
+
+"""
+short and optimize solution
+
+left = 0
+right = len(nums) - 1
+
+# don't use <= it will go infinite
+
+while left < right:
+    mid = left + (right - left) // 2
+    
+    
+    # we want to move towards the unsorted partition
+    # always check based on mid value and In binary search think what part needs to discarded
+    
+    if nums[mid] > nums[right]:
+        left = mid + 1
+    else:
+        right = mid
+    
+return nums[left]
+"""

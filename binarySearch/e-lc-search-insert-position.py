@@ -19,7 +19,7 @@ class Solution:
             if target == nums[mid]:
                 return mid
             if target > nums[mid]:
-                result = mid
+                result = mid #attention
                 left = mid +1
             else:
                 right = mid -1

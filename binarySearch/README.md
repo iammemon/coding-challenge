@@ -1,8 +1,9 @@
 # Binary Search
 ## Identification 
-Check if the array is sorted
+If it's a search problem and array is sorted
+> Note: array doesn't always have to be sorted you could use binary search on the answer concept which works if the answer function is monotonic for eg: find peak element in an unsorted array
 
-## format
+## Template
 
 ```python
 int binarySearch(int[] nums, int target) {
